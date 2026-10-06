@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Portal - Login</title>
+    <!-- Link to our external CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Traffic Portal Login</h2>
+        
+        <!-- The form submits data to 'login.php' using the secure POST method -->
+        <form action="login.php" method="POST">
+            
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <!-- Required input for username -->
+                <input type="text" id="username" name="username" placeholder="Enter 'admin'" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <!-- Required input for password -->
+                <input type="password" id="password" name="password" placeholder="Enter '12345'" required>
+            </div>
+            
+            <button type="submit">Login</button>
+            
+        </form>
+    </div>
+</body>
+</html>
